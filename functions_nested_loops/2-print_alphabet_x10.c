@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_alphabet - check the code
+* print_alphabet_x10 - check the code
 *
 * Return: On success 1.
 *
@@ -9,21 +9,16 @@
 *, with beginning and ending almost-blank lines.
 */
 
-void print_alphabet_X10(void)
-{
-int x = 1;
-	while (x != 10)  
-	_putchar(x);
-	x++;
-		{	
-		char ch = 'a';	
-			while (ch <= 'z')
-				{
-				_putchar(ch);
-				ch++;
-				}
+void print_alphabet_x10(void)
+{	
+	int n;
+	char ch;
+	for (n = 0; n <= 10; n++)
+		{
+		for (ch = 'a'; ch <= 'z'; ch++)
+	 		{
+			_putchar(ch);
+			}
 		_putchar('\n');
-		
-		}		
-}	
-	
+		}
+}
