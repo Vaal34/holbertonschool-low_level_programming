@@ -2,7 +2,7 @@
 /**
 * print_alphabet - check the code
 *
-* Return: On success 1. 
+* Return: On success 1.
 *
 * Description:  A column of asterisks on the left side
 *, with beginning and ending almost-blank lines.
