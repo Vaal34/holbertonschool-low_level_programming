@@ -11,15 +11,14 @@
 
 int main(void)
 {
+char ch[] = "_putchar";
+int i =5;
 
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
+while (ch[i] != '\0')
+	{
+	_putchar(ch[i]);
+	i++;
+	}
 	_putchar('\n');
 return (0);
 }
