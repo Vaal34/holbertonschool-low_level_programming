@@ -3,14 +3,14 @@
 /**
 * 3-islower - check the code
 *
-* Return: On success 1.
+* Return: 1 if c is lowercase, 0 otherwise
 *
-* Description:  A column of asterisks on the left side
-*, with beginning and ending almost-blank lines.
+*@c: the character to check 
+*
 */
 
 int _islower(int c)
-
+/* prototype for the function */
 {
 	if (c >= 'a' && c <= 'z')
 	{
