@@ -8,15 +8,14 @@
 * with beginning and ending almost-blank lines.
 */
 
-int main(void)
+void print_alphabet(void)
 {
-int i= 'a';
+char i = 'a';
 while (i <= 'z')
 	{
 	_putchar(i);
 	i++;
 	}
 _putchar('\n');
-return (0);
 }
 
