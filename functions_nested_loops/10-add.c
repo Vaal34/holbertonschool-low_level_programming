@@ -1,13 +1,11 @@
 #include "main.h"
 
 /**
-* add - adds two intiger
-*
-*return: Always 0.
-*
-*@a= intiger
-*@b= intiger
-**/
+* add - add numbers
+* @a: an integer
+* @b: an other integer
+* Return: Always 0
+*/
 
 int add(int a, int b)
 {
