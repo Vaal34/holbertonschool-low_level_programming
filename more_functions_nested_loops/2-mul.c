@@ -1,11 +1,12 @@
 #include "main.h"
 /**
 *mul - check the code
-*@c: the character to check
-*Return: 1 if c is uppercase, 0 otherwise
+*@b: the character to check
+*@a: the character to check
+*Return: the multiply of a*b
 */
 
 int mul(int a, int b)
 {
-	return(a*b);
+	return (a * b);
 }
