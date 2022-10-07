@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * jack_bauer - print the last digit
+ * add - adds two intiger
  * return: Always 0.
  **/
 
