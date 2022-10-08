@@ -5,14 +5,20 @@
  */
 void print_diagonal(int n)
 {
-	int t;
+	int t = 0;
 	char ch = '\\';
-	char esp = ' ';
+	char esp = '.';
 
-	for (t = 0; t < n; t++)
+	while (t < n)
 	{
-		_putchar(esp);
+		for (t = 0; t < n; t++)
+			_putchar('\n');
+		{
+			if ('\n')
+			{
+				_putchar(esp);
+				_putchar(ch);
+			}
+		}
 	}
-	_putchar(ch);
-	_putchar('\n');
 }
