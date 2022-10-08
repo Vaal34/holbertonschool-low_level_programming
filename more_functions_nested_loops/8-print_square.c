@@ -13,7 +13,7 @@ void print_square(int size)
 		}
 		for (l = 0; l <= size; l++)
 		{	
-			for (r = 0; r <= size; r++)
+			for (r = 0; r < size; r++)
 			{
 				_putchar(ch);
 			}
