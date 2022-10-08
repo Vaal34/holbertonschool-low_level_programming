@@ -9,3 +9,5 @@ $(NAME) : $(SRC)
 	$(CC) -o school $(OBJ)
 
 
+
+
