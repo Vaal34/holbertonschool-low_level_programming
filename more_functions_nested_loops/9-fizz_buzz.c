@@ -3,6 +3,7 @@
 
 /**
 * main - it's the entry point
+* Return - 0 if is true
 **/
 
 int main(void)
