@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+* times_table - print all table
+*
+**/
+
+
 void times_table(void)
 {
 
@@ -10,22 +16,31 @@ void times_table(void)
 	{
 		for (v = 0; v <= 9; v++)
 		{
-			if (v <= 9)
+			if ((v * h) <= 9)
 			{
-				_putchar((v *3) +'0');
-				_putchar(',');
+				if (v != 0)
+				{
 				_putchar(' ');
+				_putchar(' ');
+				}
+				_putchar((v * h) + '0');
+				if (v != 9)
+				{
+					_putchar(',');
+				}
 			}
 			else
 			{
-			_putchar(((v *3) + '0') / 10);
-			_putchar(((v *3) + '0') % 10);
-			_putchar(',');
-			_putchar(' ');
+				_putchar(' ');
+				_putchar(((v * h) / 10) + '0');
+				_putchar(((v * h) % 10) + '0');
+				if (v != 9)
+				{
+					_putchar(',');
+				}
 			}
 		}
-		_putchar(h);
 		_putchar('\n');
 	}
 	_putchar('\n');
-}	
+}
