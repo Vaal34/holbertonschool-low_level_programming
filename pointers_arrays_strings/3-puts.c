@@ -1,11 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strlen - count number of letters in the string
+ * _puts - print the string
  *
- *@s: the string
+ *@str: the string
  *
- * Return: C for count the strings
  */
 
 void _puts(char *str)
