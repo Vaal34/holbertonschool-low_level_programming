@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _puts2 - print the string one on two
+ * puts2 - print the string one on two
  *
  *@str: the string
  *
