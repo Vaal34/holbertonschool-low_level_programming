@@ -17,7 +17,7 @@ void puts_half(char *str)
 		i++; /* number of array */
 		c++; /* number of loops */
 	}
-		i = ((c + 1) / 2);
+		i = ((c - 1) / 2);
 	while (str[i] != '\0')
 	{
 		i++;
