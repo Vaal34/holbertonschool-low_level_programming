@@ -12,12 +12,12 @@ void puts_half(char *str)
 	int c = 0;
 	int i = 0;
 	
-	while (str[i])
+	while (str[i] != 0)
 	{
 		i++;/* number of array */
 		c++;/* number of loops */
 	}
-		i = ((c - 1) / 2);
+		i = ((c + 1) / 2);
 	while (str[i] != 0)
 	{
 		i++;
