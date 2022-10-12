@@ -1,20 +1,20 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_array - that prints n elements of an array of integers
+ * *_strcpy - copy src in dest
  *
- *@a: value of array
- *@n: the number of the array
+ *@dest: the destination²:wq
+ *@src: the pointers of the string 
  */
 
 char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
 
-	for (i = 0; src[i] < '\0' ; i++)
+	for (i = 0; src[i] != '\0' ; i++)
 	{
 		dest[i] = src[i];
-	}	
+	}
+	dest[i] != '\0';
 	return (dest);
 }
-
