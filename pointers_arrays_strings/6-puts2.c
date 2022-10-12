@@ -11,17 +11,17 @@ void puts2(char *str)
 {
 	int i = 0;
 
-	while (str[i] != '\0')
+	while (str[i] != '\0' ) //while the string is not '\0', i print
 	{
-		if (i % 2 == 0)
+		if (i % 2 == 0) //if the array is a even, i print
 		{
 			_putchar(str[i]);
 		}
-		else
+		else //else i dont print
 		{
 
 		}
-		i++;
+		i++; //so i run the loops
 	}
 	_putchar('\n');
 }
