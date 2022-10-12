@@ -14,8 +14,8 @@ void puts_half(char *str)
 	
 	while (str[i] != 0)
 	{
-		i++;/* number of array */
-		c++;/* number of loops */
+		c++;/* number of array */
+		i++;/* number of loops */
 	}
 		i = ((c - 1) / 2);
 	while (str[i] != 0)
@@ -23,4 +23,5 @@ void puts_half(char *str)
 		i++;
 		_putchar(str[i]);
 	}
+	_putchar('\n');
 }
