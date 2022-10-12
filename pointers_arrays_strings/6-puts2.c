@@ -14,13 +14,11 @@ void puts2(char *str)
 		if (*str % 2 == 0)
 		{
 			_putchar(*str);
-			str+= 2;
 		}
 		else
 		{
-			_putchar(*str);
-			str++;
 		}
+		str++;
 	}
 	_putchar('\n');
 }
