@@ -5,6 +5,7 @@
  *
  *@dest: the destination²:wq
  *@src: the pointers of the string
+ *Return: print dest
  */
 
 char *_strcpy(char *dest, char *src)
