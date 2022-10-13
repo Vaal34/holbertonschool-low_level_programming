@@ -1,17 +1,25 @@
 #include "main.h"
-
+/**
+ * _strcat - concatenates two strings
+ *
+ *@dest: is the string hello
+ *@src: is the string world
+ *
+ *Return: to the receiver
+ */
 char *_strcat(char *dest, char *src)
 {
 
 	int i;
+	int c;
 
-	for (i = 0; i != 0; i++)
+	for (i = 0; dest[i] != 0; i++)
 	{
-		dest++;
 	}
-	for (i = i - 1; i != 0; i++)
+	for (c = 0; src[c] != 0; c++)
 	{
-		src++;
+		dest[i + c] = src[c];
 	}
-	return (0);
+	dest[i + c] = '\0';
+	return (dest);
 }
