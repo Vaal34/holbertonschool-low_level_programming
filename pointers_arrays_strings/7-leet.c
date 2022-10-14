@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-  * leet - encodes a string into 1337.
+  * leet - encodes a string into 1337
   *@c: pointer
-  *Return : the string
+  *Return: the string
   */
 
 char *leet(char *c)
@@ -11,7 +11,7 @@ char *leet(char *c)
 	int i, y;
 
 	char n[] = {'4', '3', '0', '7', '1'};
-	char r[] = {'a', 'A', 'e', 'E', 'o', 'O', 
+	char r[] = {'a', 'A', 'e', 'E', 'o', 'O',
 		't', 'T', 'l', 'L'};
 
 	for (i = 0; c[i] != '\0'; i++)
