@@ -18,10 +18,9 @@ char *leet(char *c)
 	{
 		for (y = 0; y < 10; y++)
 		{
-			if (c[i] == r[i])
+			if (c[i] == r[y])
 			{
 				c[i] = n[y / 2];
-				break;
 			}
 
 
