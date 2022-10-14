@@ -11,7 +11,8 @@ char *leet(char *c)
 	int i, y;
 
 	int n[] = {4, 3, 0, 7, 1};
-	int r[] = {"aAeEoOtTlL"};
+	int r[] = {'a', 'A', 'e', 'E', 'o', 'O', 
+		't', 'T', 'l', 'L'};
 
 	for (i = 0; c[i] != '\0'; i++)
 	{
