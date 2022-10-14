@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * string_toupper - all lowercase tr uppercase
- *@c: the pointer of the strings
+ * cap_string - all lowercase tr uppercase
+ *@n: the pointer of the strings
  *
  *Return: return the string
  */
@@ -14,7 +14,6 @@ char *cap_string(char *n)
 	char c[] = {',', ';', '.', '!', '?'
 		, '"', '(', ')', '{', '}', ' ', '\n', '\t'};
 
-	
 	if  (n[0] >= 'a' && n[0] <= 'z')
 		n[0] -= 32;
 
