@@ -7,19 +7,23 @@
  *Return: return the string
  */
 
-char *cap_string(char *c)
+char *cap_string(char *n)
 {
-	int i = 0;
+	int i = 0; 
+	int x = 0;
+	char c[] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}',
+		' ', '\n', '\t'};
 
-		while (c[i] != '\0')
+	for (i = 0; n[i] != '\0'; i++)
+	{
+		for (x = 0; n[x] != '\0'; x++)
 		{
-			if (c[i] == ' ')
+			if (n[i] == c[x] && n[i + 1] != '\0')
 			{
-				i++;
-				c[i] = c[i] + 34;
+				n[i + 1] -= 32;
+				break;
 			}
-			i++;
 		}
-
-	return (c);
+	}
+	return (n);
 }
