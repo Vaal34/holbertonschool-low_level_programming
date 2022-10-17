@@ -3,7 +3,7 @@
 /**
  * _strlen_recursion - print the number of letter in the string with recursive
  *@s: the string
- *Return: the lengh of the string
+ *Return: the lengh of the strings
  */
 int _strlen_recursion(char *s)
 {
