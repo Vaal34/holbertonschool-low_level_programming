@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * factorial - print the number of letter in the string with recursive
- *@n: number
- *Return: the lengh of the string
+ * _strlen_recursion - print the number of letter in the string with recursive
+ *@s: the string
+ *Return: the lengh of the strings
  */
-int factorial(int n)
+int _strlen_recursion(char *s)
 {
-	if (n < 0)
-		{
-			return (-1);
-		}
+	if (*s == '\0')
+	{
+		return (0);
+	}
 	else
-		return factorial(n) = factorial(factorial - 1);
+		return (_strlen_recursion(s + 1) + 1);
 }
