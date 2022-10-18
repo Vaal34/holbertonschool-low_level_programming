@@ -11,5 +11,5 @@ int _atoi(char *s)
 {
 	(void) _atoi;
 	(void) s;
-	return;
+	return (0);
 }
