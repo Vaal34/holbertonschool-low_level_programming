@@ -11,4 +11,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	(void) _strspn;
+	(void) s;
+	(void) accept;
+	return (0);
 }
