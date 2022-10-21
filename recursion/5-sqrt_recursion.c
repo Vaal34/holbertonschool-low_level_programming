@@ -14,7 +14,7 @@ int _square(int c, int num)
 	}
 	else if (c * c < num)
 	{
-		return (_square(c+ 1, num));
+		return (_square(c + 1, num));
 	}
 	return (-1);
 }
