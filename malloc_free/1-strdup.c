@@ -2,10 +2,9 @@
 #include <stdlib.h>
 
 /**
- * create_array - creates an array of chars,
- * and initializes it with a specific char
- *@size: size of arrays
- *@c: a character
+ * _strdup - returns a pointer to a newly allocated space in memory,
+ * which contains a copy of the string given as a parameter
+ *@str: size of arrays
  *Return: Always 0
  */
 
