@@ -21,6 +21,8 @@ s = max - min + 1;
 	p = malloc(sizeof(int) * s);
 	if (p == 0)
 	{
+free(p);
+p = 0;
 		return (NULL);
 	}
 	for (i = 0; min != max; i++, min++)
