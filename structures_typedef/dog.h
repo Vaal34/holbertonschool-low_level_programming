@@ -11,6 +11,7 @@
  *
  * Description: Dexcribe all information on the dog
  */
+
 struct dog
 {
 	char *name;
