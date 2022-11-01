@@ -13,6 +13,10 @@
  * Description: Dexcribe all information on the dog
  */
 
+
+/**
+ * dog_t - dog_t is alias of struct dog
+ */
 typedef struct dog dog_t;
 
 struct dog
