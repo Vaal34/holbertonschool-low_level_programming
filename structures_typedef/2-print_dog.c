@@ -4,7 +4,7 @@
 
 void print_dog(struct dog *d)
 {
-	char f = "(nil)";
+	char *f = "(nil)";
 
 	if (d != NULL)
 	{
