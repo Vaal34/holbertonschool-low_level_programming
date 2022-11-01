@@ -2,6 +2,7 @@
 #define DOGS
 
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * struct dog - print the informations of poppy
@@ -11,6 +12,8 @@
  *
  * Description: Dexcribe all information on the dog
  */
+
+typedef struct dog dog_t
 
 struct dog
 {
