@@ -13,7 +13,7 @@
  * Description: Dexcribe all information on the dog
  */
 
-typedef struct dog dog_t
+typedef struct dog dog_t;
 
 struct dog
 {
