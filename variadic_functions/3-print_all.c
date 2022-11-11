@@ -67,7 +67,7 @@ void print_all(const char * const format, ...)
 	while (format != NULL && format[i])
 	{
 		b = 0;
-		while (b < 4)
+		while (b < 5)
 		{
 			if (fandfunc[b].flag == format[i])
 			{
