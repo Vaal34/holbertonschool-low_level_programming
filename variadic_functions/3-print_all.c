@@ -1,23 +1,7 @@
 #include "variadic_functions.h"
 #include <unistd.h>
 #include <stdio.h>
-
-/**
- * _strlen - lenght of string
- * @s: string
- * Return: lenght
- */
-int _strlen(char *s)
-{
-	int i, c; 
-
-	while(s[i])
-	{
-		i++;
-		c++;
-	}
-	return (c);
-}
+#include <string.h>
 
 /**
  * print_c - print a char
@@ -38,7 +22,7 @@ void print_s(va_list args)
 {
 	char *str = va_arg(args, char *);
 
-	write(1, str, _strlen(str));
+	write(1, str, strlen(str));
 }
 
 /**
