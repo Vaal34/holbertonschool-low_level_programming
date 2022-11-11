@@ -54,10 +54,10 @@ void print_fl(va_list args)
 void print_all(const char * const format, ...)
 {
 	fp fandfunc[] = {
+		{'c', print_c},
 		{'f', print_fl},
 		{'i', print_i},
 		{'s', print_s},
-		{'c', print_c},
 		{0, NULL}
 	};
 
@@ -65,6 +65,7 @@ void print_all(const char * const format, ...)
 	int i = 0;
 	int b;
 	char *sep = "";
+
 	va_start(args, format);
 
 	while (format[i])
