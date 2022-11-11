@@ -3,6 +3,23 @@
 #include <stdio.h>
 
 /**
+ * _strlen - lenght of string
+ * @s: string
+ * Return: lenght
+ */
+int _strlen(char *s)
+{
+	int i, c; 
+
+	while(s[i])
+	{
+		i++;
+		c++;
+	}
+	return (c);
+}
+
+/**
  * print_c - print a char
  * @args: args
  */
