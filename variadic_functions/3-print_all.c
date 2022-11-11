@@ -21,7 +21,7 @@ void print_s(va_list args)
 	char *str = va_arg(args, char *);
 
 	if (str == NULL)
-		str = "(nul)";
+		str = "(nil)";
 	printf("%s", str);
 }
 
