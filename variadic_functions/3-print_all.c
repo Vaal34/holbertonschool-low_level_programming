@@ -64,7 +64,7 @@ void print_all(const char * const format, ...)
 	va_list args;
 	int i = 0;
 	int b;
-
+	char *sep = "";
 	va_start(args, format);
 
 	while (format[i])
@@ -74,7 +74,9 @@ void print_all(const char * const format, ...)
 		{
 			if (fandfunc[b].flag == format[i])
 			{
+				write(1, sep, 2);
 				fandfunc[b].pointer_function(args);
+				sep = ", ";
 			}
 			b++;
 		}
