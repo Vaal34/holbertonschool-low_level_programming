@@ -9,9 +9,7 @@
  */
 void print_c(va_list args)
 {
-	int a = va_arg(args, int);
-
-	write(1, &a, 1);
+	 printf("%c", va_arg(args, int));
 }
 
 /**
@@ -22,7 +20,9 @@ void print_s(va_list args)
 {
 	char *str = va_arg(args, char *);
 
-	write(1, str, strlen(str));
+	if (str == NULL)
+		str = "(nul)";
+	printf("%s", str);
 }
 
 /**
@@ -31,9 +31,7 @@ void print_s(va_list args)
  */
 void print_i(va_list args)
 {
-	int n = va_arg(args, int);
-
-	write(1, &n, 1);
+	printf("%d", va_arg(args, int));
 }
 
 /**
@@ -42,9 +40,7 @@ void print_i(va_list args)
  */
 void print_fl(va_list args)
 {
-	double i = va_arg(args, double);
-
-	printf("%f", i);
+	printf("%f", va_arg(args, double));
 }
 
 /**
@@ -55,9 +51,9 @@ void print_all(const char * const format, ...)
 {
 	fp fandfunc[] = {
 		{'c', print_c},
-		{'f', print_fl},
-		{'i', print_i},
 		{'s', print_s},
+		{'i', print_i},
+		{'f', print_fl},
 		{0, NULL}
 	};
 
@@ -71,11 +67,11 @@ void print_all(const char * const format, ...)
 	while (format[i])
 	{
 		b = 0;
-		while (fandfunc[b].flag != 0)
+		while (b < 4)
 		{
 			if (fandfunc[b].flag == format[i])
 			{
-				write(1, sep, 2);
+				printf("%s", sep);
 				fandfunc[b].pointer_function(args);
 				sep = ", ";
 			}
@@ -84,4 +80,5 @@ void print_all(const char * const format, ...)
 		i++;
 	}
 	va_end(args);
+	printf("\n");
 }
