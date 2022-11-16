@@ -5,10 +5,10 @@
  */
 void print_diagonal(int n)
 {
-	int r = 0; /* nbr of loop turns */
+	int r = 0; 
 	int l = 0;
-	int s = '\\';
-	int e =  ' ';
+	int slash = '\\';
+	int esp =  ' ';
 
 	if (n <= 0)
 	{
@@ -19,11 +19,11 @@ void print_diagonal(int n)
 			l = r;
 			while (l > 0)
 			{
-				_putchar(e);
+				_putchar(esp);
 				l--;
 			}
 
-			_putchar(s);
+			_putchar(slash);
 			_putchar('\n');
 		}
 }
