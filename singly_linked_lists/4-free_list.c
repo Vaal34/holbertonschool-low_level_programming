@@ -9,9 +9,10 @@
 void free_list(list_t *head)
 {
 	if (head == NULL)
-	free(head);
+		free(head);
 	else
-	free(head->next);
-	free(head);
-	free(list_t.str);
+	{
+		free(head->next);
+		free(head);
+	}
 }
