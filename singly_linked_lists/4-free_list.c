@@ -3,10 +3,9 @@
 
 void free_list(list_t *head)
 {
-	while (head != NULL)
+	while (head->next != NULL)
 	{
 		head = head->next;
 		free(head);
-		head = NULL;
 	}
 }
