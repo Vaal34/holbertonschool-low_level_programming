@@ -2,24 +2,25 @@
 #include <stdlib.h>
 
 /**
- * pop_dlistint - free all list
- * @head: the first node
- *Return: the head node’s data
+ * get_dnodeint_at_index - that returns the nth node of a listint_t linked list
+ * @head: pointer of struct, first node
+ * @index: number of node
+ * Return: the nth node
  */
 
-int pop_dlistint(dlistint_t **head)
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	dlistint_t *tmp;
-	int b;
+	unsigned int count = 0;
 
-	if ((*head) == NULL)
+	tmp = head;
+
+	while (tmp != NULL)
 	{
-		return (0);
+		if (count == index)
+			return (head->next);
+		count++;
+		tmp = tmp->next;
 	}
-	b = (*head)->n;
-	tmp = *head;
-	*head = (*head)->next;
-	free(tmp);
-	tmp = NULL;
-	return (b);
+	return (head);
 }
