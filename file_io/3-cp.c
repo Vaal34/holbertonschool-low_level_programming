@@ -40,8 +40,8 @@ int main(int argc, char *a[])
 	}
 	if (close(fdsource) == -1)
 	{
-		exit(100);
 		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", fdsource);
+		exit(100);
 	}
 	if (close(fddest) == -1)
 	{
