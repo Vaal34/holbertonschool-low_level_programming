@@ -43,9 +43,9 @@ int main(int argc, char *a[])
 		exit(100);
 		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", fdsource);
 	}
-		if (close(fddest) == -1)
+	if (close(fddest) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", fdsource);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", fddest);
 		exit(100);
 	}
 	return (0);
