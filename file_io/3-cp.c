@@ -13,14 +13,15 @@ int main(int argc, char *a[])
 	int fddest = 0;
 	int size = 1;
 	int wr = 0;
+	int buffer[1024];
 
 	if (argc != 3)
 		exit(97);
 
 	fdsource = open(a[1], O_RDONLY);
-	if (fd source == -1)
+	if (fdsource == -1)
 	{
-		dprint (STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE", a[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s", a[1]);
 		exit(98);
 	}
 	fddest = open(a[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
@@ -29,13 +30,13 @@ int main(int argc, char *a[])
 		size = read(fdsource, buffer, 1024); /* on copie fdsource dans le buffer */
 		if (size == -1)
 		{
-			dprint (STDERR_FILENO,
-					"Error: Can't read from file NAME_OF_THE_FILE\n", a[1]);
+			dprintf(STDERR_FILENO,
+					"Error: Can't read from file %s\n", a[1]);
 		}
 		wr = write(fddest, buffer, size);
 		if (wr == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't write to NAME_OF_THE_FILE", a[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", a[2]);
 			exit(99);
 		}
 	}
