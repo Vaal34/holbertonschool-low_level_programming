@@ -12,11 +12,11 @@
 
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-	stint_t *p, *tmp;
+	dlistint_t *p, *tmp;
 
 	tmp = *head;
 
-	p = malloc(sizeof(listint_t));
+	p = malloc(sizeof(dlistint_t));
 	if (p == NULL)
 	{
 		return (NULL);
