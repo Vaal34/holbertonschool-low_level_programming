@@ -6,7 +6,7 @@
  *@head: the first node
  */
 
-void free_dlistint(listint_t *head)
+void free_dlistint(dlistint_t *head)
 {
 	if (head == NULL)
 		free(head);
