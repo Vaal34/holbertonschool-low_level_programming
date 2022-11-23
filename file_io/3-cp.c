@@ -13,12 +13,12 @@ int main(int argc, char *a[])
 	int buffer[1024];
 
 	if (argc != 3)
-		{drpintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		{	dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 		}
 	fdsource = open(a[1], O_RDONLY);
 	if (fdsource == -1)
-	{dprintf(STDERR_FILENO, "Error: Can't read from file %s", a[1]);
+	{dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", a[1]);
 		exit(98);
 	}
 	fddest = open(a[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
