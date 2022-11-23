@@ -32,6 +32,7 @@ int main(int argc, char *a[])
 		{
 			dprintf(STDERR_FILENO,
 					"Error: Can't read from file %s\n", a[1]);
+			exit(98);
 		}
 		wr = write(fddest, buffer, size);
 		if (wr == -1)
@@ -41,9 +42,13 @@ int main(int argc, char *a[])
 		}
 	}
 	if (close(fdsource) == -1)
-		exit(100);
-	if (close(fddest) == -1)
 	{
+		exit(100);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", fdsource);
+	}
+		if (close(fddest) == -1)
+	{
+		dprintf(STDERR, "Error: Can't close fd %s\n", fdsource);
 		exit(100);
 	}
 	return (0);
