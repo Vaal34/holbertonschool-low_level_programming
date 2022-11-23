@@ -9,10 +9,7 @@
 
 int main(int argc, char *a[])
 {
-	int fdsource = 0;
-	int fddest = 0;
-	int size = 1;
-	int wr = 0;
+	int fdsource = 0, fddest = 0, size = 1, wr = 0;
 	int buffer[1024];
 
 	if (argc != 3)
@@ -44,11 +41,11 @@ int main(int argc, char *a[])
 	if (close(fdsource) == -1)
 	{
 		exit(100);
-		dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", fdsource);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", fdsource);
 	}
 		if (close(fddest) == -1)
 	{
-		dprintf(STDERR, "Error: Can't close fd %s\n", fdsource);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", fdsource);
 		exit(100);
 	}
 	return (0);
