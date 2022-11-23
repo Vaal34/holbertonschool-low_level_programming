@@ -13,6 +13,7 @@ int main(int argc, char *a[])
 	int buffer[1024];
 
 	if (argc != 3)
+		drpintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	fdsource = open(a[1], O_RDONLY);
 	if (fdsource == -1)
