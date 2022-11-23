@@ -12,6 +12,9 @@ int main(int argc, char *a[])
 	int fdsource = 0, fddest = 0, size = 1, wr = 0;
 	int buffer[1024];
 
+	if (a[0] != "cp")
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to", a[0]);
+		exit(97);
 	if (argc != 3)
 		exit(97);
 
