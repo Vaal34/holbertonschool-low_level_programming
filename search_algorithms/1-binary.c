@@ -1,8 +1,9 @@
-#include <stdlib.h>
 #include "search_algos.h"
+#include <stdlib.h>
 #include <math.h>
 #include <stddef.h>
 #include <stdio.h>
+
 /**
  * binary_search - binary search algo
  * @array: pointer of array
@@ -10,6 +11,7 @@
  * @value: value of element of array
  * Return: i or -1
  */
+
 int binary_search(int *array, size_t size, int value)
 {
 	size_t i = 0;
