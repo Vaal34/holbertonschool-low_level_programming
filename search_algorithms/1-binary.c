@@ -19,6 +19,9 @@ int binary_search(int *array, size_t size, int value)
 	size_t h = size - 1;
 	size_t cut;
 
+	if (array == NULL)
+		return (-1);
+
 	printf("Searching in array: ");
 	for (i = 0; i < h; i++)
 		printf("%d, ", array[i]);
